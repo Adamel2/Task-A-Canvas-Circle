@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://img.icons8.com/bubbles/50/000000/monitor.png"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>First Task</title>
+  </head>
+  <body>
+    <div class="container bg-info w-50 h-30">
+    <form id="myForm">
+      <div class="row justify-content-md-center w-30">
+        <div class="data-input col-md-auto w-30">
+
+            <p>Input radius value and get the volume of a sphere</p>
+
+            <input id="input-radius"type="text" required/>
+            <br>
+            <p></p>
+
+            <span id="result">Volume is :</span>
+            <br>
+            <span id="output-volume" class="bg-primary"disabled></span>
+            <br>
+          
+            <button id="start-draw" class="btn btn-primary m-3" type="submit" onclick="drawCircleHandle()">Start to draw</button>
+            <button id="start-draw" class="btn btn-primary m" onclick="clearDraw()">Clear Draw</button>
+
+        </div>
+      </div>
+      </form>
+      <div class="row justify-content-md-center w-30">
+        <div id="circle" class="data-input col-md-auto w-30">
+            <canvas id="myCanvas" class="flex" width="250" height="250">
+        </div>
+
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
